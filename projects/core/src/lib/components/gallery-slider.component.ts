@@ -192,9 +192,9 @@ export class GallerySliderComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   private horizontalPan(e) {
-    if (!(e.direction & Hammer.DIRECTION_HORIZONTAL && e.offsetDirection & Hammer.DIRECTION_HORIZONTAL)) {
-      return;
-    }
+    // if (!(e.direction & Hammer.DIRECTION_HORIZONTAL && e.offsetDirection & Hammer.DIRECTION_HORIZONTAL)) {
+    //   return;
+    // }
     if (e.velocityX > 0.3) {
       this.prev();
     } else if (e.velocityX < -0.3) {
